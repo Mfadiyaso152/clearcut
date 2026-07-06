@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* Premium light checkered pattern representing alpha transparency */
+  .bg-checkerboard {
+    background-image: linear-gradient(45deg, #f1f5f9 25%, transparent 25%),
+                      linear-gradient(-45deg, #f1f5f9 25%, transparent 25%),
+                      linear-gradient(45deg, transparent 75%, #f1f5f9 75%),
+                      linear-gradient(-45deg, transparent 75%, #f1f5f9 75%);
+    background-size: 16px 16px;
+    background-position: 0 0, 0 8px, 8px -8px, -8px 0px;
+    background-color: #ffffff;
+  }
+}
+
+/* Beautiful custom scrollbars for a cohesive light UI experience */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Base styling overrides for premium feels */
+body {
+  font-family: 'Cairo', 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+code, pre {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Shimmer animation for light loading states */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, #f1f5f9 25%, #e2e8f0 50%, #f1f5f9 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}

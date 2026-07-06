@@ -1,0 +1,6 @@
+{
+  "name": "Clear Cut",
+  "description": "تطبيق احترافي وسلس لإزالة خلفيات الشعارات من ملفات PNG و PDF تلقائياً وبثوانٍ معدودة.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
